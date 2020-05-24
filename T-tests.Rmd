@@ -1,0 +1,20 @@
+
+
+# N15 Paired T-test
+```{r}
+t.test(decal_N15$`Udotea-reg`, decal_N15$`Udotea-decal`, paired = TRUE)
+```
+
+```{r}
+t.test(decal_N15$`Halimeda-reg`, decal_N15$`Halimdea-decal`, paired = TRUE)
+```
+
+# Percent N Paired T-test
+```{r}
+t.test(decal_per$`Udotea-reg`, decal_per$`Udotea-decal`, paired = TRUE)
+```
+
+```{r}
+t.test(decal_per$`Halimeda-reg`, decal_per$`Halimdea-decal`, paired = TRUE)
+```
+
