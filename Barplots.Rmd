@@ -17,7 +17,7 @@ ggsave("N15 ~ Decal.tiff", dpi=300)
 ```{r}
 ggplot(averages, aes(x=Genus, y=Percent, fill=Type)) + geom_bar(colour = 'black', stat="identity", position=position_dodge()) + geom_errorbar(aes(ymin=Percent-Percent_SE, ymax=Percent+Percent_SE), width=.2, position=position_dodge(.9), color = "grey44")+ 
 scale_fill_manual(values = c("white", 'black'), labels = c('Calcified', 'Decalcified')) + 
-labs(y= expression(paste('N (%)'), x = 'Genus'))+ theme(axis.text.x = element_text(face = "italic")) +
+labs(y= expression(paste('% N'), x = 'Genus'))+ theme(axis.text.x = element_text(face = "italic")) +
 scale_y_continuous(limits = c(0,3), expand = c(0, 0)) +
 theme(axis.title = element_text(size = 15)) + 
 theme(axis.text = element_text(size = 12)) + 
