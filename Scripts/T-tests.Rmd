@@ -18,3 +18,13 @@ t.test(decal_per$`Udotea-reg`, decal_per$`Udotea-decal`, paired = TRUE)
 t.test(decal_per$`Halimeda-reg`, decal_per$`Halimdea-decal`, paired = TRUE)
 ```
 
+
+# C13 Paired T-test
+```{r}
+t.test(decal_c13$`Udotea-reg`, decal_c13$`Udotea-decal`, paired = TRUE)
+```
+
+```{r}
+t.test(decal_c13$`Halimdea-decal`, decal_c13$`Halimeda-reg`, paired = TRUE)
+```
+

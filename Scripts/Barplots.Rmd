@@ -27,3 +27,16 @@ theme(legend.text = element_text(size = 12))
 ggsave("Percent ~ Decal.tiff", height = 84, width = 150, units = 'mm',dpi=1200)
 ```
 
+```{r}
+ggplot(averages, aes(x=Genus, y=C13, fill=Type)) + geom_bar(colour = "black", stat="identity", position=position_dodge()) + geom_errorbar(aes(ymin=C13-C13_SE, ymax=C13+C13_SE), width=.2, position=position_dodge(.9), color = "grey44")+ 
+scale_fill_manual(values = c("white", 'black'), labels = c('Calcified', 'Decalcified')) + 
+labs(y= expression(paste(delta^{13}, 'C (‰)'), x = 'Genus'), fill = 'Samples')+ theme(axis.text.x = element_text(face = "italic")) +
+scale_y_continuous(limits = c(-26, 0), expand = c(0, 0)) +
+theme(axis.title = element_text(size = 15)) + 
+theme(axis.text = element_text(size = 12)) + 
+theme(axis.text = element_text(colour = "black")) +
+theme(legend.title =  element_text(size = 15)) + 
+theme(legend.text = element_text(size = 12))
+ggsave("C13 ~ Decal.tiff", height = 84, width = 150, units = 'mm', dpi=1200)
+```
+
