@@ -1,5 +1,5 @@
-Genus,N15,N15_SE,Percent,Percent_SE,Type
-Udotea,3.7,0.2,0.4,0.1,Decalcified
-H. kanaloana,2.8,0.2,2.3,0.2,Decalcified
-Udotea,3.1,0.2,0.5,0.1,Calcified
-H. kanaloana,3,0.2,2.6,0.2,Calcified
+Genus,N15,N15_SE,Percent,Percent_SE,C13,C13_SE,Type
+U. geppiorum,3.7,0.2,0.4,0.1,-24.4,0.6,Decalcified
+H. kanaloana,2.8,0.2,2.3,0.2,-19.5,0.3,Decalcified
+U. geppiorum,3.1,0.2,0.5,0.1,-4.6,1,Calcified
+H. kanaloana,3,0.2,2.6,0.2,-17.6,0.5,Calcified
